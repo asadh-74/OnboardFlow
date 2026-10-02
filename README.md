@@ -1,4 +1,16 @@
-# AutoFlow — Intelligent Business Automation Platform
+# OnboardFlow: remote onboarding and HR helpdesk automation
+
+Live demo: add your Render frontend link here after the first deploy. The free Render backend can take about 30 seconds to wake, and sample data shows until it does.
+
+HR teams lose hours chasing documents, accounts and first-week tasks for every remote hire. OnboardFlow starts one workflow per hire: it sends the welcome email, opens the Slack channel, requests IT access and assigns the manager's tasks. Every run is stored in PostgreSQL, so HR can see what finished and what failed.
+
+**Workflows:** new-hire onboarding, candidate screening, weekly HR summary, overdue task reminders, bulk hire import (CSV), payroll event handler.
+
+Built on my AutoFlow automation platform (github.com/asadh-74/AutoFlow). API routes and database tables keep their original names (`customers`, `workflow_executions`); in the UI, a customer is a new hire and the `company` field holds the hire's role and team.
+
+---
+
+## Technical overview
 
 AutoFlow is a portfolio-grade full-stack business automation system that combines **Java, Python, SQL, n8n, HTML/CSS/JavaScript, Docker and Render** in one coherent project.
 
@@ -60,6 +72,8 @@ mvn spring-boot:run
 Environment variables:
 
 ```env
+# DB_SCHEMA keeps this project's tables apart from other projects in the same database (default: public)
+DB_SCHEMA=onboardflow
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=autoflow

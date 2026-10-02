@@ -1,3 +1,7 @@
+-- OnboardFlow keeps its tables in their own schema so it can share one PostgreSQL database with other projects.
+CREATE SCHEMA IF NOT EXISTS onboardflow;
+SET search_path TO onboardflow;
+
 CREATE TABLE IF NOT EXISTS customers(
   id BIGSERIAL PRIMARY KEY,
   name VARCHAR(140) NOT NULL,

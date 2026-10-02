@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: autoflow-java-api
+    name: onboardflow-java-api
     runtime: docker
     plan: free
     dockerfilePath: ./java-backend/Dockerfile
@@ -17,6 +17,10 @@ services:
         sync: false
       - key: DB_PASSWORD
         sync: false
+      - key: DB_SCHEMA
+        value: onboardflow
+      - key: APP_NAME
+        value: onboardflow-api
       - key: N8N_WEBHOOK_URL
         sync: false
       - key: N8N_LEAD_WEBHOOK_URL
@@ -25,7 +29,7 @@ services:
         sync: false
 
   - type: web
-    name: autoflow-python-service
+    name: onboardflow-python-service
     runtime: docker
     plan: free
     dockerfilePath: ./python-automation/Dockerfile
@@ -33,7 +37,7 @@ services:
     healthCheckPath: /health
 
   - type: web
-    name: autoflow-frontend
+    name: onboardflow-frontend
     runtime: static
     buildCommand: echo "Static frontend ready"
     staticPublishPath: ./frontend

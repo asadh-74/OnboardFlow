@@ -2,37 +2,37 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AutoFlow — Automation Command Center</title>
+<title>OnboardFlow — Remote onboarding and HR helpdesk automation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 <aside class="sidebar" id="sidebar">
-  <a class="brand"><span>A</span>AutoFlow</a>
-  <div class="workspace"><i></i><div><b>Operations</b><small>Production workspace</small></div></div>
+  <a class="brand"><span>O</span>OnboardFlow</a>
+  <div class="workspace"><i></i><div><b>People Operations</b><small>Remote team workspace</small></div></div>
   <nav>
     <button class="nav active" data-page="dashboard">⌂ <span>Dashboard</span></button>
-    <button class="nav" data-page="customers">◎ <span>Customers</span></button>
-    <button class="nav" data-page="automations">⌁ <span>Automations</span></button>
-    <button class="nav" data-page="executions">↯ <span>Executions</span></button>
+    <button class="nav" data-page="customers">◎ <span>New hires</span></button>
+    <button class="nav" data-page="automations">⌁ <span>Workflows</span></button>
+    <button class="nav" data-page="executions">↯ <span>Run history</span></button>
     <button class="nav" data-page="reports">▥ <span>Reports</span></button>
   </nav>
   <div class="side-bottom"><div class="health"><i></i><div><b>Systems healthy</b><small>n8n · Java · Python · SQL</small></div></div><div class="profile"><span>AH</span><div><b>Asad Hussain</b><small>Administrator</small></div></div></div>
 </aside>
 <main>
 <header>
-  <div class="title"><button id="menu">☰</button><div><small>AUTOMATION OPERATIONS</small><h1 id="title">Command Center</h1></div></div>
+  <div class="title"><button id="menu">☰</button><div><small>PEOPLE OPERATIONS</small><h1 id="title">Command Center</h1></div></div>
   <div class="actions"><button id="cmd">⌕ Search <kbd>Ctrl K</kbd></button><button id="theme">◐</button><button class="primary" id="newFlow">＋ New workflow</button></div>
 </header>
 
 <section class="page active" id="dashboard">
-  <div class="hero"><div><small>LIVE BUSINESS AUTOMATION</small><h2>Automate operations. <em>Measure everything.</em></h2><p>A portfolio-grade command center connecting Spring Boot, FastAPI, PostgreSQL and your n8n workflows.</p><div class="hero-actions"><button class="primary" data-jump="automations">Explore automations</button><button class="ghost" data-jump="executions">View executions</button><a class="ghost hero-link" href="https://github.com/asadh-74/AutoFlow" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div class="score"><div><span id="heroSuccess">0</span><small>% success</small></div></div></div>
+  <div class="hero"><div><small>REMOTE ONBOARDING AUTOMATION</small><h2>Onboard remote hires. <em>Without the follow-up.</em></h2><p>Add a hire once. OnboardFlow sends the welcome email, opens the Slack channel, requests IT access and assigns the manager's first-week tasks.</p><div class="hero-actions"><button class="primary" data-jump="automations">See workflows</button><button class="ghost" data-jump="executions">View run history</button><a class="ghost hero-link" href="https://github.com/asadh-74/AutoFlow" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div class="score"><div><span id="heroSuccess">0</span><small>% success</small></div></div></div>
   <div class="recruiter-strip">
     <div>
-      <small>RECRUITER SNAPSHOT</small>
-      <h3>One project. Multiple engineering disciplines.</h3>
-      <p>Full-stack development, backend APIs, workflow automation, databases, containers, CI/CD and cloud deployment in one working system.</p>
+      <small>HOW IT IS BUILT</small>
+      <h3>One system, built end to end.</h3>
+      <p>A Java REST API, a Python reporting service, PostgreSQL storage, n8n workflow automation, Docker containers and CI on every push.</p>
     </div>
     <div class="stack-badges">
       <span>Java 21</span><span>Spring Boot</span><span>FastAPI</span><span>PostgreSQL</span><span>n8n</span><span>Docker</span><span>Render</span><span>GitHub Actions</span>
@@ -55,51 +55,51 @@
   </div>
 
   <div class="metrics">
-    <article><span>↯</span><small>Workflow runs</small><h3 id="metricRuns">0</h3><b id="metricRunsChange">Live</b><p>stored executions</p></article>
+    <article><span>↯</span><small>Onboarding runs</small><h3 id="metricRuns">0</h3><b id="metricRunsChange">Live</b><p>stored workflow runs</p></article>
     <article><span>✓</span><small>Success rate</small><h3 id="metricSuccess">0%</h3><b id="metricSuccessText">Live</b><p>successful executions</p></article>
-    <article><span>◎</span><small>Active customers</small><h3 id="metricCustomers">0</h3><b id="metricCustomersText">Live</b><p>PostgreSQL customers</p></article>
-    <article><span>◷</span><small>Average duration</small><h3 id="metricDuration">0ms</h3><b id="metricDurationText">Live</b><p>workflow response time</p></article>
+    <article><span>◎</span><small>Active hires</small><h3 id="metricCustomers">0</h3><b id="metricCustomersText">Live</b><p>hires in PostgreSQL</p></article>
+    <article><span>◷</span><small>Average duration</small><h3 id="metricDuration">0ms</h3><b id="metricDurationText">Live</b><p>time per workflow run</p></article>
   </div>
   <div class="proof-grid">
     <article class="proof-card"><span>01</span><h3>Backend Engineering</h3><p>Java Spring Boot APIs, validation, persistence and service-to-service communication.</p></article>
-    <article class="proof-card"><span>02</span><h3>Automation</h3><p>n8n webhook orchestration with tracked workflow execution and failure handling.</p></article>
+    <article class="proof-card"><span>02</span><h3>Automation</h3><p>n8n workflows for onboarding, with every run tracked and failures recorded.</p></article>
     <article class="proof-card"><span>03</span><h3>Cloud & DevOps</h3><p>Dockerized services, Render deployment configuration and GitHub Actions CI.</p></article>
-    <article class="proof-card"><span>04</span><h3>Data Layer</h3><p>PostgreSQL-backed customer and execution data surfaced through live dashboard metrics.</p></article>
+    <article class="proof-card"><span>04</span><h3>Data Layer</h3><p>PostgreSQL stores hires and workflow runs; the dashboard reads them live.</p></article>
   </div>
 
   <div class="grid">
-    <article class="panel chart"><div class="head"><div><small>PERFORMANCE</small><h3>Automation activity</h3></div><select><option>Last 7 days</option></select></div><canvas id="activity"></canvas></article>
+    <article class="panel chart"><div class="head"><div><small>PERFORMANCE</small><h3>Onboarding activity</h3></div><select><option>Last 7 days</option></select></div><canvas id="activity"></canvas></article>
     <article class="panel"><div class="head"><div><small>INFRASTRUCTURE</small><h3>Service health</h3></div><b class="ok">● Operational</b></div><div id="services"></div></article>
   </div>
   <div class="grid">
-    <article class="panel"><div class="head"><div><small>WORKFLOWS</small><h3>Top automations</h3></div><button class="link" data-jump="automations">View all →</button></div><div id="topFlows"></div></article>
-    <article class="panel"><div class="head"><div><small>LIVE FEED</small><h3>Recent executions</h3></div><button class="link" id="refresh">↻ Refresh</button></div><div id="feed"></div></article>
+    <article class="panel"><div class="head"><div><small>WORKFLOWS</small><h3>Top workflows</h3></div><button class="link" data-jump="automations">View all →</button></div><div id="topFlows"></div></article>
+    <article class="panel"><div class="head"><div><small>LIVE FEED</small><h3>Recent runs</h3></div><button class="link" id="refresh">↻ Refresh</button></div><div id="feed"></div></article>
   </div>
 </section>
 
 <section class="page" id="customers">
-  <div class="section-head"><div><small>CRM</small><h2>Customers</h2><p>Customer records persisted through Spring Boot and PostgreSQL.</p></div><button class="primary" id="addCustomer">＋ Add customer</button></div>
-  <div class="panel table-card"><div class="filters"><input id="searchCustomer" placeholder="Search customers…"><select><option>All statuses</option><option>Active</option><option>Lead</option></select></div><div class="table-scroll"><table><thead><tr><th>Customer</th><th>Company</th><th>Status</th><th>Created</th><th></th></tr></thead><tbody id="customersBody"></tbody></table></div></div>
+  <div class="section-head"><div><small>PEOPLE</small><h2>New hires</h2><p>Hire records stored through the Spring Boot API in PostgreSQL. The company field holds the hire's role and team.</p></div><button class="primary" id="addCustomer">＋ Add new hire</button></div>
+  <div class="panel table-card"><div class="filters"><input id="searchCustomer" placeholder="Search new hires…"><select><option>All statuses</option><option>Active</option><option>Candidate</option></select></div><div class="table-scroll"><table><thead><tr><th>Hire</th><th>Role and team</th><th>Status</th><th>Created</th><th></th></tr></thead><tbody id="customersBody"></tbody></table></div></div>
 </section>
 
 <section class="page" id="automations">
-  <div class="section-head"><div><small>n8n ORCHESTRATION</small><h2>Automations</h2><p>Trigger business workflows through your n8n production webhook.</p></div><button class="primary" id="demoTrigger">▶ Trigger demo</button></div>
+  <div class="section-head"><div><small>n8n ORCHESTRATION</small><h2>Workflows</h2><p>Start an HR workflow. Each run is sent to n8n and recorded.</p></div><button class="primary" id="demoTrigger">▶ Run onboarding</button></div>
   <div class="cards" id="flowCards"></div>
 </section>
 
 <section class="page" id="executions">
-  <div class="section-head"><div><small>OBSERVABILITY</small><h2>Execution history</h2><p>Trace runs across Java, n8n, Python and PostgreSQL.</p></div><button class="ghost" id="refreshTable">↻ Refresh</button></div>
+  <div class="section-head"><div><small>OBSERVABILITY</small><h2>Run history</h2><p>Every workflow run with its status and duration.</p></div><button class="ghost" id="refreshTable">↻ Refresh</button></div>
   <div class="panel table-card"><div class="table-scroll"><table><thead><tr><th>Run</th><th>Workflow</th><th>Status</th><th>Duration</th><th>Started</th></tr></thead><tbody id="execBody"></tbody></table></div></div>
 </section>
 
 <section class="page" id="reports">
-  <div class="section-head"><div><small>INTELLIGENCE</small><h2>Reports</h2><p>Generate business summaries with the Python automation service.</p></div><button class="primary" id="reportBtn">Generate report</button></div>
-  <div class="report-grid"><article class="panel report"><small>LAST GENERATED</small><h3>Daily Operations Summary</h3><p>Combined workflow volume, health, customers and time-saving metrics.</p><strong><span id="reportHealth">0%</span><small>automation health</small></strong></article><article class="panel"><h3>Automation impact</h3><canvas id="impact"></canvas></article></div>
+  <div class="section-head"><div><small>INTELLIGENCE</small><h2>Reports</h2><p>Generate a weekly HR summary with the Python reporting service.</p></div><button class="primary" id="reportBtn">Generate report</button></div>
+  <div class="report-grid"><article class="panel report"><small>LAST GENERATED</small><h3>Weekly HR summary</h3><p>Onboarding volume, completion rate, new hires and hours saved.</p><strong><span id="reportHealth">0%</span><small>workflow success</small></strong></article><article class="panel"><h3>Runs by workflow</h3><canvas id="impact"></canvas></article></div>
 </section>
 </main>
 
-<div class="modal" id="flowModal"><div class="dialog"><div class="head"><div><small>CREATE</small><h3>New automation</h3></div><button class="x">×</button></div><label>Workflow name<input id="flowName" placeholder="e.g. Lead follow-up"></label><label>Trigger<select><option>Webhook received</option><option>Customer created</option><option>Scheduled event</option></select></label><label>Action<select><option>Send to n8n</option><option>Generate report</option><option>Create task</option></select></label><div class="dialog-actions"><button class="ghost x">Cancel</button><button class="primary" id="saveFlow">Create workflow</button></div></div></div>
-<div class="modal" id="customerModal"><div class="dialog"><div class="head"><div><small>CRM</small><h3>Add customer</h3></div><button class="cx">×</button></div><label>Name<input id="cName"></label><label>Email<input id="cEmail"></label><label>Company<input id="cCompany"></label><div class="dialog-actions"><button class="ghost cx">Cancel</button><button class="primary" id="saveCustomer">Save customer</button></div></div></div>
-<div class="command" id="palette"><div><label>⌕ <input id="paletteInput" placeholder="Type a page or command…"><kbd>ESC</kbd></label><button data-go="dashboard">⌂ Open dashboard</button><button data-go="customers">◎ View customers</button><button data-go="automations">⌁ Manage automations</button><button data-go="executions">↯ Execution history</button><button data-go="reports">▥ Reports</button></div></div>
+<div class="modal" id="flowModal"><div class="dialog"><div class="head"><div><small>CREATE</small><h3>New workflow</h3></div><button class="x">×</button></div><label>Workflow name<input id="flowName" placeholder="e.g. Equipment request"></label><label>Trigger<select><option>Webhook received</option><option>Customer created</option><option>Scheduled event</option></select></label><label>Action<select><option>Send to n8n</option><option>Generate report</option><option>Create task</option></select></label><div class="dialog-actions"><button class="ghost x">Cancel</button><button class="primary" id="saveFlow">Create workflow</button></div></div></div>
+<div class="modal" id="customerModal"><div class="dialog"><div class="head"><div><small>PEOPLE</small><h3>Add new hire</h3></div><button class="cx">×</button></div><label>Full name<input id="cName"></label><label>Email<input id="cEmail"></label><label>Role and team<input id="cCompany"></label><div class="dialog-actions"><button class="ghost cx">Cancel</button><button class="primary" id="saveCustomer">Save new hire</button></div></div></div>
+<div class="command" id="palette"><div><label>⌕ <input id="paletteInput" placeholder="Type a page or command…"><kbd>ESC</kbd></label><button data-go="dashboard">⌂ Open dashboard</button><button data-go="customers">◎ View new hires</button><button data-go="automations">⌁ Manage workflows</button><button data-go="executions">↯ Run history</button><button data-go="reports">▥ Reports</button></div></div>
 <div id="toast"></div><script src="config.js"></script><script src="app.js"></script>
 </body></html>
